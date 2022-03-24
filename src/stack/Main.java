@@ -2,7 +2,7 @@ package stack;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Main {
+public class Main { // nilai dari sebuah operator
     static int Pre(char ch) {
         switch (ch) {
             case '+':
@@ -30,12 +30,15 @@ public class Main {
                     result += stack.pop();
                 }
                 stack.push(c);
+                // tanda kurung pop stack secara berurutan
             } else if (c == ')') {
                 char x = stack.pop();
                 while (x != '(') {
                     result += x;
                     x = stack.pop();
                 }
+                // menambah ke dalam stack
+
             } else if (c == '(') {
                 stack.push(c);
 
