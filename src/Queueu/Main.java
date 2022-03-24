@@ -14,11 +14,12 @@ public class Main {
         listTugas.enqueue("Tugas Besar");
         System.out.print("Tugas prioritas : ");
         System.out.println(listTugas.head.key);
+        System.out.println("==================");
         listTugas.dequeue();
         System.out.println("Sisa tugas yang belum dikerjakan : ");
         System.out.println(listTugas.head.key);
         System.out.println(listTugas.tail.key);
-
+        System.out.println("==================");
 //    int pilihan = input.nextInt();
 //        do{
 //            if (pilihan == 1){
